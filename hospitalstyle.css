@@ -281,6 +281,9 @@ justify-content: center;
             align-items:flex-start;
             justify-content: center;
         }
+     .content{
+            margin-top: -60px;
+        }
     
 #home{
     width: 100%;
