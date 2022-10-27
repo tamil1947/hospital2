@@ -1,653 +1,445 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
 
-:root {
-    --green: #16a085;
-    --black: #444;
-    --light-color: #777;
-    --box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
-    --text-shadow: .4rem .4rem 0 rgba(0, 0, 0, .2);
-    --border: .2rem solid var(--green);
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./hospitalstyle.css">
+    <title>Document</title>
+</head>
 
-* {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-transform: capitalize;
-    transition: all .2s ease-out;
-    text-decoration: none;
-}
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"><i class="fas fa-heartbeat"></i> medcare.</a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Doctors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Book </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Review </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Blogs</a>
+                </li>
+            </ul>
+        </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </nav>
 
-html {
-    overflow-x: hidden;
-    scroll-padding-top: 7rem;
-    scroll-behavior: smooth;
-}
+    <ul class="nav flex-column reponsive-drop ">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Service</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link">Doctors</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link">Book</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link">Review</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link">Blogs</a>
+        </li>
+    </ul>
 
-/*navbar*/
-.navbarNav {
-    justify-content: end;
-}
 
-.navbar {
-    position: relative;
-    padding: 15px 100px;
-    background: #fff;
-    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
-}
+    <!--section home-->
+    <section id="home">
 
-#menu-btn {
-    color: var(--green);
-    cursor: pointer;
-    font-size: 1.7rem;
-    background: #fff;
-    display: none;
-}
+        <div class="image">
+            <img src="image/home-img.svg" alt="">
+        </div>
+        <div class="content-container">
+            <div class="content">
+                <h3>stay safe, stay healthy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sed autem vero? Magnam, est laboriosam!
+                </p>
+                <a href="#" class="btn"> contact us <span class="fas fa-chevron-right"></span></a>
+            </div>
 
-.navbar .navbar-brand {
-    font-size: 25px;
-    color: #16a085;
-}
+        </div>
+    </section>
 
-.navbar li a {
-    color: var(--light-color);
-    font-size: 16px;
-}
 
-/*drobdown*/
-.reponsive-drop {
-    border: 1px solid var(--green);
-    font-size: 20px;
-    width: 100%;
-    color: white;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
-    background-color: white;
-    box-shadow: var(--box-shadow);
-    position: absolute;
+    <!--icon-container-->
+    <section class="icons-container">
 
-}
+        <div class="icons">
+            <i class="fas fa-user-md"></i>
+            <h3>140+</h3>
+            <p>doctors at work</p>
+        </div>
 
-.reponsive-drop li a {
-    color: var(--light-color);
-}
+        <div class="icons">
+            <i class="fas fa-users"></i>
+            <h3>1040+</h3>
+            <p>satisfied patients</p>
+        </div>
 
-#menu-btn.fa-times {
-    transform: rotate(180deg);
-}
-.drop-nav-boxshadow{
+        <div class="icons">
+            <i class="fas fa-procedures"></i>
+            <h3>500+</h3>
+            <p>bed facility</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-hospital"></i>
+            <h3>80+</h3>
+            <p>available hospitals</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="our-service" id="our-service">
+        <h1>OUR<span style="color:green;"> SERVICES</span></h1>
+        <div class="our-service-box-container">
+            <div class="our-service-box">
+                <i class="fas fa-notes-medical"></i>
+                <h3>Free Checkups</h3>
+                <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Ad, Omnis</p>
+                <a class="btn" href="">Lern More<span class="fas fa-chevron-right"></span></a>
+            </div>
+
+            <div class="our-service-box">
+                <i class="fas fa-ambulance"></i>
+                <h3>24/7 Ambulance</h3>
+                <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Ad, Omnis</p>
+                <a class="btn" href="">Lern More<span class="fas fa-chevron-right"></span></a>
+            </div>
+
+            <div class="our-service-box">
+                <i class="fas fa-user-md"></i>
+                <h3>Expert Doctors</h3>
+                <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Ad, Omnis</p>
+                <a class="btn" href="">Lern More<span class="fas fa-chevron-right"></span></a>
+            </div>
+
+
+
+            <div class="our-service-box">
+                <i class="fas fa-pills"></i>
+                <h3>Medicines</h3>
+                <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Ad, Omnis</p>
+                <a class="btn" href="">Lern More<span class="fas fa-chevron-right"></span></a>
+            </div>
+            <div class="our-service-box">
+                <i class="fas fa-procedures"></i>
+                <h3>Bed Facility</h3>
+                <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Ad, Omnis</p>
+                <a class="btn" href="">Lern More<span class="fas fa-chevron-right"></span></a>
+            </div>
+            <div class="our-service-box">
+                <i class="fas fa-notes-medical"></i>
+                <h3>Total Care</h3>
+                <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Ad, Omnis</p>
+                <a class="btn" href="">Lern More<span class="fas fa-chevron-right"></span></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--about section-->
+
+    <section class="about">
+        <h1 class="heading"> <span style="color: green;">about</span> us </h1>
+
+        <div class="about-container">
+
+            <div class="image">
+                <img src="image/about-img.svg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>we take care of your healthy life</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ducimus, quod ex cupiditate ullam in
+                    assumenda maiores et culpa odit tempora ipsam qui, quisquam quis facere iste fuga, minus nesciunt.
+                </p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus vero ipsam laborum porro voluptates
+                    voluptatibus a nihil temporibus deserunt vel?</p>
+                <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!--our doctor section-->
+
+    <section class="our-doctors">
+        <h1>OUR <span style="color: green;">DOCTORS</span></h1>
+        <div class="our-doctors-box-container">
+            <div class="doctor-box">
+                <img src="./image/doc-1.jpg">
+                <h3>John Deo</h3>
+                <p>Expert Doctor</p>
+                <div class="doctor-icons">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="doctor-box">
+                <img src="./image/doc-2.jpg">
+                <h3>John Deo</h3>
+                <p>Expert Doctor</p>
+                <div class="doctor-icons">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+
+            <div class="doctor-box">
+                <img src="./image/doc-3.jpg">
+                <h3>John Deo</h3>
+                <p>Expert Doctor</p>
+                <div class="doctor-icons">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+
+            <div class="doctor-box">
+                <img src="./image/doc-4.jpg">
+                <h3>John Deo</h3>
+                <p>Expert Doctor</p>
+                <div class="doctor-icons">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+
+            <div class="doctor-box">
+                <img src="./image/doc-5.jpg">
+                <h3>John Deo</h3>
+                <p>Expert Doctor</p>
+                <div class="doctor-icons">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+
+            <div class="doctor-box">
+                <img src="./image/doc-6.jpg">
+                <h3>John Deo</h3>
+                <p>Expert Doctor</p>
+                <div class="doctor-icons">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="booknow-section">
+        <h1 class="h1-1"><span style="color: green;">BOOK</span> NOW</h1>
+        <div class="booknow-container">
+            <div class="image">
+                <img src="./image/book-img.svg">
+            </div>
+            <form action="">
+
+                <h1 style="text-align:center ;color: #16a085;padding-bottom: 5px;font-weight: 700;">Book Appointment</h1>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your number">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <input type="date" class="form-control" placeholder="Your mm/dd/yyyy">
+                </div>
+                <div class="form-group">
+                    <input type="button" class="btn btn-success" name="Book now" value="Book now">
+                </div>
+
+
+
+            </form>
+
+        </div>
+    </section>
+
+
+    <!--review section-->
+
+    <section class="review-section">
+        <h1>CLIENT'S<span style="color:#16a085 ;"> REVIEW</span></h1>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+
+
+              <div class="carousel-item active">
+                <div class="review-section-box ">
+                    <div class="review-background-top">
+                    <img src="./image/pic-2.png"  class="rounded-circle">
+                    <h3>John Deo</h3>
+                    <div class="strats">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                    <p>orem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Laboriosam Sapiente Nihil Aperiam? Repellat Sequi
+                        Nisi Aliquid Perspiciatis Libero Nobis Rem Numquam Nesciunt Alias Sapiente Minus Voluptatem, Reiciendis
+                        Consequuntur Optio Dolorem!</p>
+                </div>
+              </div>
+
+
+              
+              <div class="carousel-item">
+                <div class="review-section-box ">
+                    <div class="review-background-top">
+                    <img src="./image/pic-1.png"  class="rounded-circle">
+                    <h3>John Deo</h3>
+                    <div class="strats">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                    <p>orem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Laboriosam Sapiente Nihil Aperiam? Repellat Sequi
+                        Nisi Aliquid Perspiciatis Libero Nobis Rem Numquam Nesciunt Alias Sapiente Minus Voluptatem, Reiciendis
+                        Consequuntur Optio Dolorem!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="review-section-box ">
+                    <div class="review-background-top">
+                    <img src="./image/pic-3.png"  class="rounded-circle">
+                    <h3>John Deo</h3>
+                    <div class="strats">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                    <p>orem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Laboriosam Sapiente Nihil Aperiam? Repellat Sequi
+                        Nisi Aliquid Perspiciatis Libero Nobis Rem Numquam Nesciunt Alias Sapiente Minus Voluptatem, Reiciendis
+                        Consequuntur Optio Dolorem!</p>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+</section>
+
+<!--footer section-->
+<section class="footer">
+    <div class="footer-box-container">
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href=""><i class="fas fa-chevron-right"></i>Home</a>
+            <a href=""><i class="fas fa-chevron-right"></i>service</a>
+            <a href=""><i class="fas fa-chevron-right"></i>about</a>
+            <a href=""><i class="fas fa-chevron-right"></i>doctor</a>
+            <a href=""><i class="fas fa-chevron-right"></i>Book</a>
+            <a href=""><i class="fas fa-chevron-right"></i>Review</a>
+            <a href=""><i class="fas fa-chevron-right"></i>Blog</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Our Servicer</h3>
+            <a href=""><i class="fas fa-chevron-right"></i>Denteal Care</a>
+            <a href=""><i class="fas fa-chevron-right"></i>Message Therapy</a>
+            <a href=""><i class="fas fa-chevron-right"></i>cardioloty</a>
+            <a href=""><i class="fas fa-chevron-right"></i>diagnosis</a>
+            <a href=""><i class="fas fa-chevron-right"></i>Ambulance</a>
+       
+        </div>
+
+
+        <div class="footer-box">
+            <h3>Cantact info</h3>
+            <a href=""><i class="fas fa-chevron-right"></i>+123-456-7890</a>
+            <a href=""><i class="fas fa-chevron-right"></i>+424-233-3555</a>
+            <a href=""><i class="fas fa-chevron-right"></i>jhbvjh@gmail.com</a>
+            <a href=""><i class="fas fa-chevron-right"></i>medca@gmail.com</a>
+            <a href=""><i class="fas fa-chevron-right"></i>merhelp@gmail.com</a>
+          
+        </div>
+
+        <div class="footer-box">
+            <h3>Follow us</h3>
+            <a href=""><i class="fas fa-facebook-f"></i>facebook</a>
+            <a href=""><i class="fas fa-twitter"></i>twitter</a>
+            <a href=""><i class="fas fa-instagram"></i>instagram</a>
+            <a href=""><i class="fas fa-linkedin"></i>linkedin</a>
+            <a href=""><i class="fas fa-pinterest"></i>pinterest</a>
+         
+        </div>
+    </div>
+    <div class="footer2">Created By <span style="color:green"> Tamil </span>| All Rights Reserved</div>
     
-}
-
-/*home section*/
-.image img {
-    width: 75%;
-    margin-left: 10rem;
-    margin-top: 1rem;
-    
-}
-
-#home {
-    width: 100%;
-    height: 87vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-}
-
-.content-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.content h3 {
-    font-size: 3rem;
-    color: var(--black);
-    line-height: 1.8;
-    text-shadow: var(--text-shadow);
-}
-
-.content p {
-    font-size: 1rem;
-    color: var(--light-color);
-    line-height: 1.8;
-    padding: 1rem 0;
-}
-
-.content .btn {
-    border: 1px solid var(--green);
-}
-
-
-/*icon-container*/
-.icons-container {
-    background-color: aqua;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 1px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    gap: 1rem;
-    background: #eee;
-}
-
-.icons-container .icons {
-    border: ;
-    box-shadow: rgba(0, 0, 0, 0.301) 0px 4px 6px -1px, rgba(0, 0, 0, 0.527) 0px 2px 4px -1px;
-    border-radius: .5rem;
-    text-align: center;
-    padding: 1rem;
-    background-color: #fff;
-
-}
-
-.icons-container .icons i {
-    font-size: 3rem;
-    color: var(--green);
-    padding-bottom: 1rem;
-}
-
-.icons-container .icons h3 {
-    font-size: 3rem;
-    color: var(--black);
-    padding: 1rem;
-    text-shadow: var(--text-shadow);
-}
-
-.icons-container .icons p {
-    font-size: rem;
-    color: var(--light-color);
-}
-
-/*ourservice section*/
-    .our-service{
-        padding: 20px 10rem;
-    }
-.our-service h1{
-   text-align: center;
-   padding: 20px;
-   text-shadow: var(--text-shadow);
-   font-weight: 700;
-}
-.our-service-box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
-    gap: 2rem;
-
-}
-.our-service-box{
-    text-align: center;
-    border: 2px solid var(--green);
-    padding: 30px;
-    box-shadow: var(--box-shadow);
-    border-radius: 5px;
-}
-
-.our-service-box i{
-    color: #16a085;
-font-size: 3.2rem;
-padding-bottom: 0.5rem;
-}
-.our-service-box h3{
-color: var(--black);
-}
-.our-service-box p{
-color: var(--light-color);
-font-size: 1rem;
-padding-top: 5px;
-}
-
-.our-service-box span{
-    padding-left: 5px;
-}
-.our-service-box .btn{
-    font-size: 1rem;
-    border: 1px solid var(--green);
-}
-
-
-/*about*/
-.about{
-    background-color:rgba(128, 128, 128, 0.205);
-    padding: 10px;
-}
-.about h1{
-    padding: 20px;
-    text-align: center;
-    font-weight: 700;
-}
-.about-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-
-/*our doctors*/
-.our-doctors h1{
-padding-top: 20px;
-text-align: center;
-font-weight: 700;
-text-shadow: var(--box-shadow);
-}
-.our-doctors-box-container{
-display:grid ;
-align-items: center;
-justify-content: center;
-grid-template-columns:repeat(4,15rem);
-gap: 2rem;
-padding:8rem;
-padding-bottom: 3rem;
-padding-top: 20px;
-}
-.our-doctors-box-container .doctor-box{
-    border:1px solid #16a085;
-    text-align: center;
-    padding-top:10px ;
-    padding-bottom: 10px;
-}
-
-.our-doctors-box-container .doctor-box img{
-height: 180px;
-padding-bottom: 5px;
-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-}
-.our-doctors-box-container .doctor-box .doctor-icons{
-
-} 
-.our-doctors-box-container .doctor-box .doctor-icons a{
-    padding: 5px 5px;
-    font-size: 1.8rem;
-}
-
-
-
-
-/*book now*/
-.booknow-section{
-background-color: rgba(68, 68, 68, 0.404);
-padding: 15px;  
-}
-.booknow-section img{
- width: %; 
-    }
-.booknow-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.booknow-section .h1-1{
-    text-align: center;
-    padding: 3rem;
-}
-.booknow-container .form-control{
-   height: 40px;
-   border: 1px solid green;
-}
-
-
-/*review section*/
-.review-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding:2rem 1px;
-}
-.review-section h1{
-    text-shadow:var(--box-shadow);
-    padding: 20px;
-    
-}
-.review-section-box{
-    width: 20rem;
-    border: 1px solid green;
-    text-align: center;
-    border-radius: 3px;
-    
-}
-.review-section-box img{
-    padding-top: 2px;
-    box-shadow: rgba(0, 0, 0, 0.808) 0px 5px 15px;
-}
-.review-section-box p{
- padding: 20px;
-}
-.review-background-top{
-    border-bottom-left-radius: 7rem;
-    border-bottom-right-radius: 7rem;
-    box-shadow: rgba(60, 64, 67, 0.397) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-}
-.review-background-top{
-    background-color: #16a085;
-}
-
-/*footer*/
-.footer{
-background-color: gray;
-}
-.footer a{
-    line-height: 3rem;
-    color: white;
-}
-.footer-box-container{
-    padding: 4rem 10rem;
-display: grid;
-
-
-grid-template-columns: repeat(auto-fill,minmax(10rem,1fr));
-background-color: #444;
-gap: 4rem;
-
-
-}
-
-
-.footer-box{
-    
-    display:flex;
-    flex-direction: column;
-
-    text-align: left;
-}
-.footer-box h3{
-    font-weight: 700;
-}
-.footer-box i{
-    padding-right: 5px;
-    color: #16a085;
-}
-
-.footer2
-{
-    padding: 1.8rem;
-    text-align: center;
-    background-color: #444;
-    border-top: .1rem solid rgba(0, 0, 0, .1);
-    font-weight: 700;
-}
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width:991px) {
-
-    /*navbar*/
-    .navbarNav {
-        justify-content: end;
-    }
-
-    .navbar {
-        padding: 15px 40px !important;
-        background: #fff;
-        box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
-
-    }
-
-    #menu-btn {
-        color: var(--green);
-        cursor: pointer;
-        font-size: 1.7rem;
-        background: #fff;
-        display: block;
-    }
-
-    .navbar .navbar-brand {
-        font-size: 22px !important;
-        color: #16a085;
-    }
-
-    .navbar li a {
-        color: var(--light-color);
-        font-size: 16px;
-    }
-
-    /*drobdown*/
-    .reponsive-drop {
-        border: 1px solid var(--green);
-        font-size: 18px;
-        width: 100%;
-        color: white;
-        text-align: center;
-
-    }
-
-    .active {
-        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
-    }
-
-
-
-    /*home section*/
-    .image img {
-        width: 90%;
-        margin-left: 1rem;
-        margin-top: 1rem;
-    }
-
-    #home {
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    /*icon section*/
-    .content h3 {
-        font-size: 3rem;
-        line-height: 1.8;
-
-    }
-
-    .content p {
-        font-size: 1rem;
-        color: var(--light-color);
-        line-height: 1.8;
-        padding: 1rem 0;
-    }
-
-    .content {
-        text-align: center;
-    }
-
-    .booknow-container{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width:768px) {
-
-    /*home section*/
-
-    #home {
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-        padding: 0 10px;
-    }
-
-    #home {
-
-        height: 92vh;
-
-    }
-
-    .image img {
-        width: 90%;
-        margin-left: 0rem;
-    }
-
-
-    /*icon container*/
-    .icons-container {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-
-    }
-
-
-
-
-    .our-service{
-        padding: 20px 1rem;
-    }
-
-
- 
-
-
-
-   
-
-    
-/*about*/
-.about{
-    background-color:rgba(128, 128, 128, 0.205);
-    padding: 10px;
-}
-.about h1{
-    padding: 20px;
-    text-align: center;
-    font-weight: 700;
-}
-.about-container{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-
-.our-doctors-box-container{
-    padding:20px;
-    grid-template-columns:repeat(2,10rem);
-    gap: 8px;
-    }
-    .our-doctors-box-container .doctor-box img{
-        height: 120px;
-        padding-bottom: 5px;
-        }
-        .our-doctors-box-container .doctor-box .doctor-icons a{
-            padding: 5px 5px;
-            font-size: 1.2rem;
-        }
-
-/*booknow*/
-
-        .booknow-container{
-            
-            grid-template-columns:1fr;
-        }
-
-
-        /*review*/
-        .review-section h1{
-            
-            font-size: 1.6rem;
-        }
-
-
-
-
-
-        /*footer*/
-.footer{
-    background-color: gray;
-    }
-    .footer a{
-        line-height: 3rem;
-        color: white;
-    }
-    .footer-box-container{
-        padding: 4rem 4rem;
-    display: grid;
-    
-    
-    grid-template-columns: repeat(auto-fill,minmax(10rem,1fr));
-    background-color: #444;
-    gap:1rem;
-    
-    
-    }
-    
-    
-    .footer-box{
-        
-        display:flex;
-        flex-direction: column;
-    
-        text-align: left;
-    }
-    .footer-box i{
-        padding-right: 5px;
-    }
-    
-     
-
-
-}
-
-
-
-
-
-
-
-
-@media (max-width:480px) {
-
-    /*home section*/
-    /*home section*/
-    .image {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-    }
-
-    .content-container {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        margin-top: -65px;
-    }
-
-    .content h3 {
-        line-height: 1.3;
-
-    }
-
-    #home {
-        width: 100%;
-        grid-template-columns: 1fr;
-        height: 110vh;
-
-    }
-
-}
+</section>
+
+    <script src="./hospitalscript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
