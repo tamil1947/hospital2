@@ -242,12 +242,13 @@ text-shadow: var(--box-shadow);
 display:grid ;
 grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
 gap: 2rem;
-padding: 10px 6rem;
+padding:30px;
 }
 .our-doctors-box-container .doctor-box{
     border:1px solid #16a085;
     text-align: center;
-    padding: 20px 0px;
+    padding-top:10px ;
+    padding-bottom: 10px;
 }
 
 .our-doctors-box-container .doctor-box img{
