@@ -289,9 +289,11 @@ border: 1px solid black;
 }
 .booknow-container .form-container{
     padding: 40px;
+    margin-right: 50px;
+    margin-top: 10px;
 }
 .booknow-container .form-container .form-control{
-   height: 4rem;
+   height: 40px;
 }
 
 
@@ -478,6 +480,7 @@ border: 1px solid black;
             font-size: 1.2rem;
         }
 
+/*booknow*/
 
         .booknow-container{
             display: grid;
