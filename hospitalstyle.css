@@ -85,6 +85,7 @@ html {
     width: 75%;
     margin-left: 10rem;
     margin-top: 1rem;
+    
 }
 
 #home {
@@ -304,6 +305,7 @@ padding: 15px;
 .review-section h1{
     text-shadow:var(--box-shadow);
     padding: 20px;
+    
 }
 .review-section-box{
     width: 20rem;
@@ -314,7 +316,7 @@ padding: 15px;
 }
 .review-section-box img{
     padding-top: 2px;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    box-shadow: rgba(0, 0, 0, 0.808) 0px 5px 15px;
 }
 .review-section-box p{
  padding: 20px;
@@ -322,6 +324,7 @@ padding: 15px;
 .review-background-top{
     border-bottom-left-radius: 7rem;
     border-bottom-right-radius: 7rem;
+    box-shadow: rgba(60, 64, 67, 0.397) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .review-background-top{
     background-color: #16a085;
@@ -355,11 +358,22 @@ gap: 4rem;
 
     text-align: left;
 }
+.footer-box h3{
+    font-weight: 700;
+}
 .footer-box i{
     padding-right: 5px;
+    color: #16a085;
 }
 
-
+.footer2
+{
+    padding: 1.8rem;
+    text-align: center;
+    background-color: #444;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+    font-weight: 700;
+}
 
 
 
@@ -547,6 +561,13 @@ gap: 4rem;
         .booknow-container{
             
             grid-template-columns:1fr;
+        }
+
+
+        /*review*/
+        .review-section h1{
+            
+            font-size: 1.6rem;
         }
 
 
