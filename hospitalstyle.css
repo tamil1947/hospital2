@@ -273,7 +273,7 @@ padding-bottom: 5px;
 /*book now*/
 .booknow-section{
 background-color: rgba(68, 68, 68, 0.404);
-padding: 20px;  
+padding: 15px;  
 }
 .booknow-container{
     display: grid;
@@ -479,11 +479,11 @@ border: 1px solid black;
         }
 
 
-        /*booknow*/
-        .booknow-section .h1-1{
-       
-            padding: 1rem;
+        .booknow-container{
+            display: grid;
+            grid-template-columns:1fr;
         }
+     
 
 
 }
