@@ -258,6 +258,7 @@ padding-top: 20px;
 .our-doctors-box-container .doctor-box img{
 height: 180px;
 padding-bottom: 5px;
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .our-doctors-box-container .doctor-box .doctor-icons{
 
@@ -288,8 +289,75 @@ padding: 15px;
 }
 .booknow-container .form-control{
    height: 40px;
+   border: 1px solid green;
 }
 
+
+/*review section*/
+.review-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:2rem 1px;
+}
+.review-section h1{
+    text-shadow:var(--box-shadow);
+    padding: 20px;
+}
+.review-section-box{
+    width: 20rem;
+    border: 1px solid green;
+    text-align: center;
+    border-radius: 3px;
+    
+}
+.review-section-box img{
+    padding-top: 2px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.review-section-box p{
+ padding: 20px;
+}
+.review-background-top{
+    border-bottom-left-radius: 7rem;
+    border-bottom-right-radius: 7rem;
+}
+.review-background-top{
+    background-color: #16a085;
+}
+
+/*footer*/
+.footer{
+background-color: gray;
+}
+.footer a{
+    line-height: 3rem;
+    color: white;
+}
+.footer-box-container{
+    padding: 4rem 10rem;
+display: grid;
+
+
+grid-template-columns: repeat(auto-fill,minmax(10rem,1fr));
+background-color: #444;
+gap: 4rem;
+
+
+}
+
+
+.footer-box{
+    
+    display:flex;
+    flex-direction: column;
+
+    text-align: left;
+}
+.footer-box i{
+    padding-right: 5px;
+}
 
 
 
@@ -480,6 +548,43 @@ padding: 15px;
             
             grid-template-columns:1fr;
         }
+
+
+
+
+
+        /*footer*/
+.footer{
+    background-color: gray;
+    }
+    .footer a{
+        line-height: 3rem;
+        color: white;
+    }
+    .footer-box-container{
+        padding: 4rem 4rem;
+    display: grid;
+    
+    
+    grid-template-columns: repeat(auto-fill,minmax(10rem,1fr));
+    background-color: #444;
+    gap:1rem;
+    
+    
+    }
+    
+    
+    .footer-box{
+        
+        display:flex;
+        flex-direction: column;
+    
+        text-align: left;
+    }
+    .footer-box i{
+        padding-right: 5px;
+    }
+    
      
 
 
