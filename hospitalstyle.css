@@ -231,6 +231,37 @@ padding-top: 5px;
 }
 
 
+/*our doctors*/
+.our-doctors h1{
+padding: 20px;
+text-align: center;
+font-weight: 700;
+text-shadow: var(--box-shadow);
+}
+.our-doctors-box-container{
+display:grid ;
+grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+gap: 2rem;
+padding: 10px 6rem;
+}
+.our-doctors-box-container .doctor-box{
+    border:1px solid #16a085;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.our-doctors-box-container .doctor-box img{
+height: 180px;
+padding-bottom: 5px;
+}
+.our-doctors-box-container .doctor-box .doctor-icons{
+
+} 
+.our-doctors-box-container .doctor-box .doctor-icons a{
+    padding: 5px 5px;
+    font-size: 1.8rem;
+}
+
 
 
 
@@ -371,6 +402,9 @@ padding-top: 5px;
         padding: 20px 1rem;
     }
 
+
+
+   
 
     
 /*about*/
