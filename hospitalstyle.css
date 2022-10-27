@@ -242,7 +242,7 @@ text-shadow: var(--box-shadow);
 display:grid ;
 grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
 gap: 2rem;
-padding:30px;
+padding:8rem;
 }
 .our-doctors-box-container .doctor-box{
     border:1px solid #16a085;
@@ -402,6 +402,11 @@ padding-bottom: 5px;
     .our-service{
         padding: 20px 1rem;
     }
+
+
+    .our-doctors-box-container{
+        padding: 4rem;
+        }
 
 
 
