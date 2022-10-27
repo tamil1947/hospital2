@@ -275,6 +275,9 @@ padding-bottom: 5px;
 background-color: rgba(68, 68, 68, 0.404);
 padding: 15px;  
 }
+.booknow-section img{
+ width: %; 
+    }
 .booknow-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -283,16 +286,7 @@ padding: 15px;
     text-align: center;
     padding: 3rem;
 }
-.booknow-container .form-container{
-border: 1px solid black;
-
-}
-.booknow-container .form-container{
-    padding: 40px;
-    margin-right: 50px;
-    margin-top: 10px;
-}
-.booknow-container .form-container .form-control{
+.booknow-container .form-control{
    height: 40px;
 }
 
@@ -483,7 +477,7 @@ border: 1px solid black;
 /*booknow*/
 
         .booknow-container{
-            display: grid;
+            
             grid-template-columns:1fr;
         }
      
